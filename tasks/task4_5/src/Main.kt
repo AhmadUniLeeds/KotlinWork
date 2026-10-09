@@ -3,5 +3,17 @@
 import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
-    // Add your code here
+
+    if (args.size != 1) {
+        println("ERROR: Please enter the upper limit!")
+        exitProcess(1)
+    }
+
+    var sum = 0L
+
+    for (n in 1..args[0].toInt() step 2) {
+        sum += n
+    }
+
+    println(sum)
 }

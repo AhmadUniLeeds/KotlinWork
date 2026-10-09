@@ -2,7 +2,6 @@
 
 import kotlin.system.exitProcess
 
-
 fun main(args: Array<String>) {
 
     if (args.size != 2) {
@@ -10,7 +9,7 @@ fun main(args: Array<String>) {
         exitProcess(1)
     }
 
-    if (anagrams(args[0], args[1])) {
+    if (args[0] anagramsOf args[1]) {
         println("Both words are the same!")
     }
     else {

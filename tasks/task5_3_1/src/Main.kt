@@ -2,14 +2,13 @@
 
 import kotlin.system.exitProcess
 
-
 fun main(args: Array<String>) {
 
     if (args.size != 1) {
-        println("ERROR: Please enter 1 integer!")
-        exitProcess(1)
+        rollDie()
     }
-
-    rollDie(args[0].toInt())
+    else {
+        rollDie(args[0].toInt())
+    }
 
 }

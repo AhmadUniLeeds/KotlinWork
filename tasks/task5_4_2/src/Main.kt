@@ -1,4 +1,4 @@
-// Task 5.4.1: main program
+// Task 5.4.2: main program
 
 fun main() {
     println("Ttest".isTooLong)
